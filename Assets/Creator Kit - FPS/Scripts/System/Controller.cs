@@ -86,7 +86,7 @@ public class Controller : MonoBehaviour
             PickupWeapon(startingWeapons[i]);
         }
 
-        // 시작 탄약을 코드에서 150으로 강제 지정
+        // Force the starting ammo to 150 in the code
         for (int i = 0; i < startingAmmo.Length; ++i)
         {
             startingAmmo[i].amount = 150;

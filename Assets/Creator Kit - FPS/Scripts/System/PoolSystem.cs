@@ -4,8 +4,6 @@ using UnityEngine;
 using Debug = UnityEngine.Debug;
 using Object = UnityEngine.Object;
 
-//Simple ring buffer style pool system. You don't need to return the object to the pool, it just get pushed back to the
-//end of the queue again. So use it only for object with short lifespan (projectile, particle system that auto disable)
 public class PoolSystem : MonoBehaviour
 {
     public static PoolSystem Instance { get; private set; }
