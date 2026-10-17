@@ -86,10 +86,12 @@ public class Controller : MonoBehaviour
             PickupWeapon(startingWeapons[i]);
         }
 
-        // Force the starting ammo to 150 in the code
         for (int i = 0; i < startingAmmo.Length; ++i)
         {
-            startingAmmo[i].amount = 150;
+            if (startingAmmo[i].ammoType == 2)
+                startingAmmo[i].amount = 10;
+            else
+                startingAmmo[i].amount = 150;
         }
 
         for (int i = 0; i < startingAmmo.Length; ++i)
